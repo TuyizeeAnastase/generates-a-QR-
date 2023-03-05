@@ -1,0 +1,61 @@
+{
+  "name": "generates-a-qr-code",
+  "version": "1.0.0",
+  "description": "Generate QR code using node js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "better-npm-run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "nodemon --exec npx babel-node src/app.js",
+      "env": {
+        "NODE_ENV": "development",
+        "PORT": 3500
+      }
+    },
+    "test": {
+      "command": "nyc --reporter=html --reporter=text mocha --require @babel/register ./tests/*.test.js --timeout 200000 --exit || true",
+      "env": {
+        "NODE_ENV": "test",
+        "PORT": 5500
+      }
+    },
+    "prod": {
+      "command": "node ./dist/app.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuyizeeAnastase/generates-a-QR-code.git"
+  },
+  "author": "Anastase Tuyizere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TuyizeeAnastase/generates-a-QR-code/issues"
+  },
+  "homepage": "https://github.com/TuyizeeAnastase/generates-a-QR-code#readme",
+  "dependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.21.0",
+    "babel-node": "0.0.1-security",
+    "better-npm-run": "^0.1.1",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.8.3",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.21",
+    "nyc": "^15.1.0",
+    "qrcode": "^1.5.1"
+  }
+}
