@@ -15,7 +15,7 @@
 ### Running tests
 - Run `npm test` to run tests
 - or refer to images in project folder 
-- go to and  [base64convertertoimage](https://codebeautify.org/base64-to-image-converter} paste response from postman
+-[go to base64convertertoimage  go to and  ](https://codebeautify.org/base64-to-image-converter} paste response from postman
 
 images
 ![results console ](https://res.cloudinary.com/duhetxdbs/image/upload/v1678088359/Screenshot_from_2023-03-06_09-21-36_awn2af.png)
