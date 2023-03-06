@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "better-npm-run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_ENV=test better-npm-run test"
   },
   "betterScripts": {
     "dev": {
@@ -16,7 +16,7 @@
       }
     },
     "test": {
-      "command": "nyc --reporter=html --reporter=text mocha --require @babel/register ./tests/*.test.js --timeout 200000 --exit || true",
+      "command": "nyc --reporter=html --reporter=text mocha --require @babel/register ./tests/*.test.js --timeout 100000 --exit || true",
       "env": {
         "NODE_ENV": "test",
         "PORT": 5500
@@ -44,7 +44,6 @@
     "@babel/core": "^7.21.0",
     "@babel/node": "^7.20.7",
     "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.21.0",
     "babel-node": "0.0.1-security",
     "better-npm-run": "^0.1.1",
     "chai": "^4.3.7",
@@ -56,6 +55,7 @@
     "mocha": "^10.2.0",
     "nodemon": "^2.0.21",
     "nyc": "^15.1.0",
-    "qrcode": "^1.5.1"
+    "qrcode": "^1.5.1",
+    "supertest": "^6.3.3"
   }
 }
