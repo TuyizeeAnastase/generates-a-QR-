@@ -11,7 +11,7 @@
 
 ### Running server
 - Run `npm run dev` to run server local
-- create car http://localhost:3000/api/v1/cars
+- create car(POST method) http://localhost:3000/api/v1/cars
 
 ### Running tests
 - Run `npm test` to run tests
