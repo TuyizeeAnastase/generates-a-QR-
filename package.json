@@ -4,8 +4,10 @@
   "description": "Generate QR code using node js",
   "main": "index.js",
   "scripts": {
+    "build": "babel src --out-dir dist --source-maps inline --copy-files",
     "dev": "better-npm-run dev",
-    "test": "cross-env NODE_ENV=test better-npm-run test"
+    "test": "cross-env NODE_ENV=test better-npm-run test",
+    "start": "node --require @babel/polyfill ./dist/app.js"
   },
   "betterScripts": {
     "dev": {
