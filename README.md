@@ -14,10 +14,11 @@
 
 ### Running tests
 - Run `npm test` to run tests
+- or refer to images in project folder 
 
 images
-![results console ](images/Screenshot from 2023-03-06 09-21-36.png)
-![post request and response in postman ](images/Screenshot from 2023-03-06 09-21-56.png)
+![results console ](https://res.cloudinary.com/duhetxdbs/image/upload/v1678088359/Screenshot_from_2023-03-06_09-21-36_awn2af.png)
+![post request and response in postman ](https://res.cloudinary.com/duhetxdbs/image/upload/v1678088359/Screenshot_from_2023-03-06_09-21-56_uez69e.png)
 
 ### Api Production Link
 [Production Link](https://generate-qrcode.onrender.com)
